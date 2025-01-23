@@ -1,0 +1,124 @@
+{
+  "resource": "/fellow_to_tana",
+  "path": "/fellow_to_tana/",
+  "httpMethod": "POST",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Encoding": "gzip, compress, deflate, br",
+    "CloudFront-Forwarded-Proto": "https",
+    "CloudFront-Is-Desktop-Viewer": "true",
+    "CloudFront-Is-Mobile-Viewer": "false",
+    "CloudFront-Is-SmartTV-Viewer": "false",
+    "CloudFront-Is-Tablet-Viewer": "false",
+    "CloudFront-Viewer-ASN": "396982",
+    "CloudFront-Viewer-Country": "US",
+    "Content-Type": "application/json",
+    "Host": "bebyoplsl7.execute-api.us-east-1.amazonaws.com",
+    "User-Agent": "axios/1.7.8",
+    "Via": "1.1 49f259fbf0878ade02febf4980fecb18.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "GJagvrs2_p8VDK3VUd0eXLi_ju_LVH29Oe-1riHOx3-fbCOP5BWZ1w==",
+    "X-Amzn-Trace-Id": "Root=1-6747341b-1dc16f503c5c368a049cbfb0",
+    "X-Forwarded-For": "34.96.41.95, 130.176.186.132",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "application/json, text/plain, */*"
+    ],
+    "Accept-Encoding": [
+      "gzip, compress, deflate, br"
+    ],
+    "CloudFront-Forwarded-Proto": [
+      "https"
+    ],
+    "CloudFront-Is-Desktop-Viewer": [
+      "true"
+    ],
+    "CloudFront-Is-Mobile-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-SmartTV-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-Tablet-Viewer": [
+      "false"
+    ],
+    "CloudFront-Viewer-ASN": [
+      "396982"
+    ],
+    "CloudFront-Viewer-Country": [
+      "US"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Host": [
+      "bebyoplsl7.execute-api.us-east-1.amazonaws.com"
+    ],
+    "User-Agent": [
+      "axios/1.7.8"
+    ],
+    "Via": [
+      "1.1 49f259fbf0878ade02febf4980fecb18.cloudfront.net (CloudFront)"
+    ],
+    "X-Amz-Cf-Id": [
+      "GJagvrs2_p8VDK3VUd0eXLi_ju_LVH29Oe-1riHOx3-fbCOP5BWZ1w=="
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-6747341b-1dc16f503c5c368a049cbfb0"
+    ],
+    "X-Forwarded-For": [
+      "34.96.41.95, 130.176.186.132"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": {
+    "nodeId": "DCGOz2d_vAh_"
+  },
+  "multiValueQueryStringParameters": {
+    "nodeId": [
+      "DCGOz2d_vAh_"
+    ]
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "6d6llr",
+    "resourcePath": "/event_json",
+    "httpMethod": "POST",
+    "extendedRequestId": "B6UUbEJKoAMEDsw=",
+    "requestTime": "27/Nov/2024:15:00:43 +0000",
+    "path": "/Prod/event_json/",
+    "accountId": "975049919633",
+    "protocol": "HTTP/1.1",
+    "stage": "Prod",
+    "domainPrefix": "bebyoplsl7",
+    "requestTimeEpoch": 1732719643944,
+    "requestId": "17b14907-8537-4848-a868-c837c437cdf1",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "34.96.41.95",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "axios/1.7.8",
+      "user": null
+    },
+    "domainName": "bebyoplsl7.execute-api.us-east-1.amazonaws.com",
+    "deploymentId": "euetjc",
+    "apiId": "bebyoplsl7"
+  },
+  "body": "\"- {'title': 'Foundry Planning', 'note_text': 'Collaborations\\\\n\\\\nPlatform\\\\n(x) 2313 - uox16_set4_nxu_testing - part1\\\\n   Pre-Meeting Notes\\\\n   \u2022  Upcoming set of 2 plates for activity and protein quantification\\\\n    \u2022  Standard activity, activity after 1 hour at 37 and Pierce\\\\n    \u2022  Additionally one plate will need to incubate at 37C o/n, then have activity run the following morning\\\\n   Minutes\\\\n   \u2022  Uricase activity and protein quantification\\\\n(x) 2199 - Cloning Plasmids for Expression Strain Testing\\\\n   Pre-Meeting Notes\\\\n   \u2022  Turn one\\\\n    \u2022  Almost finished, just need to label and stock plasmids and cloning strain glycerol stocks. Expression strains that were generated need to be spot checked, then stocked\\\\n    \u2022  We had 41/59 possible constructs assemble correctly, and move on into expression strain transformation\\\\n     \u2022  These plasmids are going into multiple strains and with multiple other aRS plasmids\\\\n     \u2022  89/102 double transformations were successful, failures were mostly with transformations into BL21 (12/13)\\\\n    \u2022  The 18 that failed to properly assemble, plus the 14 that originally did not transform, are being targeted for turn 2\\\\n   \u2022  Turn 2\\\\n    \u2022  Missing constructs were retransformed into DH5a, colonies picked, overnights glycerol stocked, and cell pellets saved at -80\\\\n    \u2022  \\\\n   Minutes\\\\n    \u2022  Cloning for Dana\\\\n    \u2022  41 correctly assembled \u2192  102 transformations\\\\n     \u2022  1 strain (BL21) had issues with transformation \\\\n(x) 1953 - HT aaRS screening\\\\n   Pre-Meeting Notes\\\\n   \u2022  1953 slides 11-22-24\\\\n', 'event_start': '2024-11-22T17:00:00Z', 'fellow_url': 'https://grobio.fellow.app/meetings/040000008200E00074C5B7101A82E00807E80B16D067F8AB6F8DD9010000000000000000100000005E8982E788EC35449AF16E026892B900/?utm_source=fellow_integrations&utm_medium=zapier&utm_content=note_sent_hook'} #fellow-json\\n\"",
+  "isBase64Encoded": false
+}

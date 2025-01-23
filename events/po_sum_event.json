@@ -1,0 +1,124 @@
+{
+  "resource": "/event_json",
+  "path": "/event_json/",
+  "httpMethod": "POST",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Encoding": "gzip, compress, deflate, br",
+    "CloudFront-Forwarded-Proto": "https",
+    "CloudFront-Is-Desktop-Viewer": "true",
+    "CloudFront-Is-Mobile-Viewer": "false",
+    "CloudFront-Is-SmartTV-Viewer": "false",
+    "CloudFront-Is-Tablet-Viewer": "false",
+    "CloudFront-Viewer-ASN": "396982",
+    "CloudFront-Viewer-Country": "US",
+    "Content-Type": "application/json",
+    "Host": "bebyoplsl7.execute-api.us-east-1.amazonaws.com",
+    "User-Agent": "axios/1.6.7",
+    "Via": "1.1 4a03c73f3dcfcfd37ea6a992da6dce06.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "TOzV1DQjsjtSbKOO2GlicPdk7K2VthHwM2rhj72f-hLhOgFL_QqSkA==",
+    "X-Amzn-Trace-Id": "Root=1-660ffe24-5695be0b04fb81d71bd075c9",
+    "X-Forwarded-For": "35.203.251.44, 130.176.186.181",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "application/json, text/plain, */*"
+    ],
+    "Accept-Encoding": [
+      "gzip, compress, deflate, br"
+    ],
+    "CloudFront-Forwarded-Proto": [
+      "https"
+    ],
+    "CloudFront-Is-Desktop-Viewer": [
+      "true"
+    ],
+    "CloudFront-Is-Mobile-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-SmartTV-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-Tablet-Viewer": [
+      "false"
+    ],
+    "CloudFront-Viewer-ASN": [
+      "396982"
+    ],
+    "CloudFront-Viewer-Country": [
+      "US"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Host": [
+      "bebyoplsl7.execute-api.us-east-1.amazonaws.com"
+    ],
+    "User-Agent": [
+      "axios/1.6.7"
+    ],
+    "Via": [
+      "1.1 4a03c73f3dcfcfd37ea6a992da6dce06.cloudfront.net (CloudFront)"
+    ],
+    "X-Amz-Cf-Id": [
+      "TOzV1DQjsjtSbKOO2GlicPdk7K2VthHwM2rhj72f-hLhOgFL_QqSkA=="
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-660ffe24-5695be0b04fb81d71bd075c9"
+    ],
+    "X-Forwarded-For": [
+      "35.203.251.44, 130.176.186.181"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": {
+    "nodeId": "tuT_4y6wH-Ut"
+  },
+  "multiValueQueryStringParameters": {
+    "nodeId": [
+      "tuT_4y6wH-Ut"
+    ]
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "6d6llr",
+    "resourcePath": "/event_json",
+    "httpMethod": "POST",
+    "extendedRequestId": "VwSlsHSpIAMEhzw=",
+    "requestTime": "05/Apr/2024:13:35:32 +0000",
+    "path": "/Prod/event_json/",
+    "accountId": "975049919633",
+    "protocol": "HTTP/1.1",
+    "stage": "Prod",
+    "domainPrefix": "bebyoplsl7",
+    "requestTimeEpoch": 1712324132179,
+    "requestId": "dd763f52-e7aa-498d-b31a-4b816e0a158a",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "35.203.251.44",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "axios/1.6.7",
+      "user": null
+    },
+    "domainName": "bebyoplsl7.execute-api.us-east-1.amazonaws.com",
+    "deploymentId": "3nf28x",
+    "apiId": "bebyoplsl7"
+  },
+  "body": "\"- Purchase Order #10356 (Formulatrix) #[[purchase order]]\\n  - PO Number:: 10356\\n  - Supplier:: [[Formulatrix^6D0R0uGpFrOX]]\\n  - Date:: [[date:2024-04-05]]\\n  - Prepared By:: [[Mark Cerutti^CM5Pj-mO4hw1]]\\n  - Signed By:: [[Rob Warden-Rothman^O9-cw6w740WV]]\\n  - PDF::  ![PO 10356 - PO_Formulatrix_Service_20240404](https://firebasestorage.googleapis.com/v0/b/tagr-prod.appspot.com/o/notespace%2Frobwarden27%40gmail.com%2Fuploads%2F2024-04-05T13%3A05%3A10.349Z-PO%2010356%20-%20PO_Formulatrix_Service_20240404.pdf?alt=media&token=21b6650b-6e9e-4fbf-9058-e94356c4833b) \\n  - Lines\\n    - Mantis PM #[[po line]]\\n      - Quantity:: 1\\n      - Unit Price:: 4600\\n      - Total:: 4600\\n    - nada #[[po line]]\\n      - Quantity:: 7\\n      - Unit Price:: 30\\n      - Total:: 210\\n\"",
+  "isBase64Encoded": false
+}

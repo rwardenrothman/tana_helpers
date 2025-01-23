@@ -1,0 +1,160 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: |
+  tana_helpers
+  Sample SAM Template for tana_helpers
+Parameters:
+  TanaKeyParam:
+    Description: A Tana API Key
+    Type: String
+Globals:
+  Function:
+    Timeout: 300
+    Environment:
+      Variables:
+        TanaKey: !Ref TanaKeyParam
+Resources:
+  CloudWatchRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - apigateway.amazonaws.com
+            Action: sts:AssumeRole
+      Path: /
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs
+  Account:
+    Type: AWS::ApiGateway::Account
+    Properties:
+      CloudWatchRoleArn: !GetAtt CloudWatchRole.Arn
+  EventJSONFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: tana_helpers/
+      Handler: event_json.lambda_handler
+      Runtime: python3.11
+      Architectures:
+        - x86_64
+      Events:
+        LgExport:
+          Type: Api
+          Properties:
+            Path: /event_json
+            Method: post
+    Metadata:
+      SamResourceId: EventJSONFunction
+  SumPOFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: tana_helpers/
+      Handler: po_sums.lambda_handler
+      Runtime: python3.11
+      Architectures:
+        - x86_64
+      Events:
+        LgExport:
+          Type: Api
+          Properties:
+            Path: /sum_po
+            Method: post
+    Metadata:
+      SamResourceId: SumPOFunction
+  SemblyNoteFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: tana_helpers/
+      Handler: sembly_notes.lambda_handler
+      Runtime: python3.11
+      Architectures:
+        - x86_64
+      Events:
+        LgExport:
+          Type: Api
+          Properties:
+            Path: /sembly_notes
+            Method: post
+    Metadata:
+      SamResourceId: SemblyNoteFunction
+  SemblyTranscriptFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: tana_helpers/
+      Handler: sembly_transcripts.lambda_handler
+      Runtime: python3.11
+      Architectures:
+        - x86_64
+      Events:
+        LgExport:
+          Type: Api
+          Properties:
+            Path: /sembly_transcripts
+            Method: post
+    Metadata:
+      SamResourceId: SemblyTranscriptFunction
+  FellowTanaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: tana_helpers/
+      Handler: fellow_to_tana.lambda_handler
+      Runtime: python3.11
+      Architectures:
+        - x86_64
+      Events:
+        LgExport:
+          Type: Api
+          Properties:
+            Path: /fellow_to_tana
+            Method: post
+    Metadata:
+      SamResourceId: FellowTanaFunction
+Outputs:
+  EventJSONApi:
+    Description: API Gateway endpoint URL for Prod stage for EventJSON function
+    Value: !Sub https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/event_json/
+  EventJSONFunction:
+    Description: EventJSON Lambda Function ARN
+    Value: !GetAtt EventJSONFunction.Arn
+  EventJSONIamRole:
+    Description: Implicit IAM Role created for EventJSON function
+    Value: !GetAtt EventJSONFunctionRole.Arn
+  SumPOApi:
+    Description: API Gateway endpoint URL for Prod stage for SumPO function
+    Value: !Sub https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/sum_po/
+  SumPOFunction:
+    Description: SumPO Lambda Function ARN
+    Value: !GetAtt SumPOFunction.Arn
+  SumPOIamRole:
+    Description: Implicit IAM Role created for SumPO function
+    Value: !GetAtt SumPOFunctionRole.Arn
+  SemblyNoteApi:
+    Description: API Gateway endpoint URL for Prod stage for SemblyNote function
+    Value: !Sub https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/sembly_notes/
+  SemblyNoteFunction:
+    Description: SemblyNotes Lambda Function ARN
+    Value: !GetAtt SemblyNoteFunction.Arn
+  SemblyNoteIamRole:
+    Description: Implicit IAM Role created for SemblyNote function
+    Value: !GetAtt SemblyNoteFunctionRole.Arn
+  SemblyTranscriptApi:
+    Description: API Gateway endpoint URL for Prod stage for SemblyTranscript function
+    Value: !Sub https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/sembly_transcripts/
+  SemblyTranscriptFunction:
+    Description: SemblyTranscripts Lambda Function ARN
+    Value: !GetAtt SemblyTranscriptFunction.Arn
+  SemblyTranscriptIamRole:
+    Description: Implicit IAM Role created for SemblyTranscript function
+    Value: !GetAtt SemblyTranscriptFunctionRole.Arn
+  FellowTanaApi:
+    Description: API Gateway endpoint URL for Prod stage for FellowTana function
+    Value: !Sub https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/fellow_to_tana/
+  FellowTanaFunction:
+    Description: FellowTana Lambda Function ARN
+    Value: !GetAtt FellowTanaFunction.Arn
+  FellowTanaIamRole:
+    Description: Implicit IAM Role created for FellowTana function
+    Value: !GetAtt FellowTanaFunctionRole.Arn

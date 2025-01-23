@@ -1,0 +1,124 @@
+{
+  "resource": "/event_json",
+  "path": "/event_json/",
+  "httpMethod": "POST",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Encoding": "gzip, compress, deflate, br",
+    "CloudFront-Forwarded-Proto": "https",
+    "CloudFront-Is-Desktop-Viewer": "true",
+    "CloudFront-Is-Mobile-Viewer": "false",
+    "CloudFront-Is-SmartTV-Viewer": "false",
+    "CloudFront-Is-Tablet-Viewer": "false",
+    "CloudFront-Viewer-ASN": "396982",
+    "CloudFront-Viewer-Country": "US",
+    "Content-Type": "application/json",
+    "Host": "bebyoplsl7.execute-api.us-east-1.amazonaws.com",
+    "User-Agent": "axios/1.6.7",
+    "Via": "1.1 0a58752d78fb248f2488304f0f93599a.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "5pqD4nL-w8vtpt5h5cy5zOzBTMYH25_31xvHqa0UmswDpHtmdnBe0Q==",
+    "X-Amzn-Trace-Id": "Root=1-663103a9-7826fa7b33ebdce45299b1e3",
+    "X-Forwarded-For": "35.203.251.37, 130.176.186.140",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "application/json, text/plain, */*"
+    ],
+    "Accept-Encoding": [
+      "gzip, compress, deflate, br"
+    ],
+    "CloudFront-Forwarded-Proto": [
+      "https"
+    ],
+    "CloudFront-Is-Desktop-Viewer": [
+      "true"
+    ],
+    "CloudFront-Is-Mobile-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-SmartTV-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-Tablet-Viewer": [
+      "false"
+    ],
+    "CloudFront-Viewer-ASN": [
+      "396982"
+    ],
+    "CloudFront-Viewer-Country": [
+      "US"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Host": [
+      "bebyoplsl7.execute-api.us-east-1.amazonaws.com"
+    ],
+    "User-Agent": [
+      "axios/1.6.7"
+    ],
+    "Via": [
+      "1.1 0a58752d78fb248f2488304f0f93599a.cloudfront.net (CloudFront)"
+    ],
+    "X-Amz-Cf-Id": [
+      "5pqD4nL-w8vtpt5h5cy5zOzBTMYH25_31xvHqa0UmswDpHtmdnBe0Q=="
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-663103a9-7826fa7b33ebdce45299b1e3"
+    ],
+    "X-Forwarded-For": [
+      "35.203.251.37, 130.176.186.140"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": {
+    "nodeId": "-tVxeAIYPSbu"
+  },
+  "multiValueQueryStringParameters": {
+    "nodeId": [
+      "-tVxeAIYPSbu"
+    ]
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "6d6llr",
+    "resourcePath": "/event_json",
+    "httpMethod": "POST",
+    "extendedRequestId": "XC2CmHZkIAMElgA=",
+    "requestTime": "30/Apr/2024:14:43:53 +0000",
+    "path": "/Prod/event_json/",
+    "accountId": "975049919633",
+    "protocol": "HTTP/1.1",
+    "stage": "Prod",
+    "domainPrefix": "bebyoplsl7",
+    "requestTimeEpoch": 1714488233956,
+    "requestId": "02bdf20a-e60e-404b-a484-b6d6ed387399",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "35.203.251.37",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "axios/1.6.7",
+      "user": null
+    },
+    "domainName": "bebyoplsl7.execute-api.us-east-1.amazonaws.com",
+    "deploymentId": "n17idx",
+    "apiId": "bebyoplsl7"
+  },
+  "body": "\"- Presentation\\n  - Presentation PDF::  ![20240430_ChemEx_AHM](https://firebasestorage.googleapis.com/v0/b/tagr-prod.appspot.com/o/notespace%2Frobwarden27%40gmail.com%2Fuploads%2F2024-04-30T13%3A36%3A39.627Z-20240430_ChemEx_AHM.pdf?alt=media&token=9eccd127-7206-46ab-9024-1e01a26f9e39) \\n  - Presentation PPTX::  ![20240430_ChemEx_AHM.pptx](https://firebasestorage.googleapis.com/v0/b/tagr-prod.appspot.com/o/notespace%2Frobwarden27%40gmail.com%2Fuploads%2F2024-04-30T13%3A18%3A37.000Z-20240430_ChemEx_AHM.pptx?alt=media&token=f708fd24-f228-4521-a80f-ab511976c89e) \\n  -\\n\"",
+  "isBase64Encoded": false
+}

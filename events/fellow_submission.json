@@ -1,0 +1,124 @@
+{
+  "resource": "/fellow_to_tana",
+  "path": "/fellow_to_tana/",
+  "httpMethod": "POST",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Encoding": "gzip, compress, deflate, br",
+    "CloudFront-Forwarded-Proto": "https",
+    "CloudFront-Is-Desktop-Viewer": "true",
+    "CloudFront-Is-Mobile-Viewer": "false",
+    "CloudFront-Is-SmartTV-Viewer": "false",
+    "CloudFront-Is-Tablet-Viewer": "false",
+    "CloudFront-Viewer-ASN": "396982",
+    "CloudFront-Viewer-Country": "US",
+    "Content-Type": "application/json",
+    "Host": "bebyoplsl7.execute-api.us-east-1.amazonaws.com",
+    "User-Agent": "axios/1.7.7",
+    "Via": "1.1 4b28b963946514dd2cf9a90f74a8034a.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "6RfYX0NsrQKOBVTI5B8aRfcJysuThvqPQhMAmV20vUPmO2LWZZNFtg==",
+    "X-Amzn-Trace-Id": "Root=1-6745d95d-5817a66a1a827878041b3027",
+    "X-Forwarded-For": "34.96.41.2, 64.252.178.69",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "application/json, text/plain, */*"
+    ],
+    "Accept-Encoding": [
+      "gzip, compress, deflate, br"
+    ],
+    "CloudFront-Forwarded-Proto": [
+      "https"
+    ],
+    "CloudFront-Is-Desktop-Viewer": [
+      "true"
+    ],
+    "CloudFront-Is-Mobile-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-SmartTV-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-Tablet-Viewer": [
+      "false"
+    ],
+    "CloudFront-Viewer-ASN": [
+      "396982"
+    ],
+    "CloudFront-Viewer-Country": [
+      "US"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Host": [
+      "bebyoplsl7.execute-api.us-east-1.amazonaws.com"
+    ],
+    "User-Agent": [
+      "axios/1.7.7"
+    ],
+    "Via": [
+      "1.1 4b28b963946514dd2cf9a90f74a8034a.cloudfront.net (CloudFront)"
+    ],
+    "X-Amz-Cf-Id": [
+      "6RfYX0NsrQKOBVTI5B8aRfcJysuThvqPQhMAmV20vUPmO2LWZZNFtg=="
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-6745d95d-5817a66a1a827878041b3027"
+    ],
+    "X-Forwarded-For": [
+      "34.96.41.2, 64.252.178.69"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": {
+    "nodeId": "GZT7L_bUX8qd"
+  },
+  "multiValueQueryStringParameters": {
+    "nodeId": [
+      "GZT7L_bUX8qd"
+    ]
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "6d6llr",
+    "resourcePath": "/fellow_to_tana",
+    "httpMethod": "POST",
+    "extendedRequestId": "B27mpE4EoAMEN1A=",
+    "requestTime": "26/Nov/2024:14:21:17 +0000",
+    "path": "/Prod/fellow_to_tana/",
+    "accountId": "975049919633",
+    "protocol": "HTTP/1.1",
+    "stage": "Prod",
+    "domainPrefix": "bebyoplsl7",
+    "requestTimeEpoch": 1732630877305,
+    "requestId": "86e3d1ad-5192-42a2-b953-7d6993b7dd4c",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "34.96.41.2",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "axios/1.7.7",
+      "user": null
+    },
+    "domainName": "bebyoplsl7.execute-api.us-east-1.amazonaws.com",
+    "deploymentId": "wojbvn",
+    "apiId": "bebyoplsl7"
+  },
+  "body": "\"- {'title': 'Sam/Rob', 'note_text': 'General Check In\\\\n( ) How are you?\\\\n   Low morale in the company reminds Sam of previous layoff experiences\\\\n  [ ] See if the Social Committee can do anything to cheer people up\\\\n\\\\nImmediate Items\\\\n( ) Asset Management\\\\n   Minutes\\\\n   \u2022  Need to figure out what Chris had been aiming for.\\\\n    \u2022  Just the TC/Expansion Budget and Service contract list? \u2714\ufe0f\\\\n    \u2022  Something more?\\\\n   Next Steps\\\\n  [ ] Ask Dan to see if Chris can add any insight\\\\n  [ ] Ask Tad if there\u2019s anything he/Tracey would want to see for the upcoming plan\\\\n( ) Packages for Chris\\\\n   Pre-Meeting Notes\\\\n   \u2022  Not sure if anyone is watching for Chris\u2019s packages\\\\n   \u2022  Could you/Rico check the package room tablet for them when you pick up other things?\\\\n( ) Inventory Organization\\\\n   Minutes\\\\n   \u2022  Will start in earnest after Thanksgiving\\\\n   Next Steps\\\\n  [ ] Clean off windowsills\\\\n( ) TC Room Buildout\\\\n   Minutes\\\\n   \u2022  BSC 2 got a new HEPA filter and was certified yesterday\\\\n   Next Steps\\\\n  [ ] Review TC room furniture\\\\n  [ ] Review consumables for TC room\\\\n   \\\\n\\\\nGoals\\\\n\\\\nFuture Items\\\\n', 'event_start': '2024-11-19T15:00:00Z', 'fellow_url': 'https://grobio.fellow.app/1on1s/VXNlcjo5Nzk3Njg=/VXNlcjo5OTMyNjQ=/?utm_source=fellow_integrations&utm_medium=zapier&utm_content=note_sent_hook#Tm90ZTozNTA0ODc4OA=='}\\n\"",
+  "isBase64Encoded": false
+}
